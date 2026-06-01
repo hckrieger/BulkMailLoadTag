@@ -1,0 +1,112 @@
+﻿<Window x:Class="BulkMailLoadTagApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:BulkMailLoadTagApp.ViewModel"
+        xmlns:local="clr-namespace:BulkMailLoadTagApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="600">
+    <Window.Resources>
+
+        <vm:BulkMailTagVM x:Key="vm" />
+
+        <Style TargetType="TextBox" x:Key="simpleTextBox">
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="Background" Value="#FFFF99" />
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="sideAlignedTextBlock">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Padding" Value="7 0 7 0"/>
+        </Style>
+
+        <Style x:Key="Title" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="48" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="VerticalAlignment" Value="Center" />
+
+        </Style>
+
+    </Window.Resources>
+    <Grid Margin="15" DataContext="{StaticResource vm}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="25" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Document Title-->
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource Title}">
+            Bulk Mail Load Tag
+        </TextBlock>
+
+        <!--Dispatch Number-->
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Dispatch #:" Style="{StaticResource sideAlignedTextBlock}" />
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="dispatchNumberTextBox" Text="{Binding DispatchNumber, Mode=TwoWay}" Style="{StaticResource simpleTextBox}" />
+
+        <!--Job Number-->
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Job Number #:" Style="{StaticResource sideAlignedTextBlock}" />
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="jobNumberTextBox" Text="{Binding JobNumber, Mode=TwoWay}" Style="{StaticResource simpleTextBox}"/>
+
+        <!--Customer Name/Title-->
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Customer Name/Title:" Style="{StaticResource sideAlignedTextBlock}" />
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="customerNameTextBox" Text="{Binding CustomerNameTitle, Mode=TwoWay}"  Style="{StaticResource simpleTextBox}" />
+
+        <!--Version-->
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Version:" Style="{StaticResource sideAlignedTextBlock}" />
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="versionTextBox" Text="{Binding Version, Mode=TwoWay}"  Style="{StaticResource simpleTextBox}" />
+
+        <!--Pallets-->
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Skids" Style="{StaticResource sideAlignedTextBlock}"  />
+        <TextBox Grid.Row="5" Grid.Column="1" x:Name="palletsTextBox" Text="{Binding SkidQuantity, Mode=TwoWay}"  Style="{StaticResource simpleTextBox}" TextChanged="palletsTextBox_TextChanged" />
+
+        <TextBlock Grid.Row="6" Grid.Column="1" Text="Total:" VerticalAlignment="Center" FontSize="18"/>
+        <TextBox Grid.Row="6" Grid.Column="1" x:Name="palletTotalTextBox" Text="{Binding TotalPallets, Mode=OneWay}" IsEnabled="False" HorizontalAlignment="Center" MinWidth="175" Style="{StaticResource simpleTextBox}" />
+        <TextBlock Grid.Row="7" Grid.Column="0" Text="Classification:"  Style="{StaticResource sideAlignedTextBlock}" />
+        <ComboBox Grid.Row="7" Grid.Column="1" x:Name="classificationComboBox" Height="35" FontSize="25" HorizontalContentAlignment="Center" Background="#FFFF99" ItemsSource="{Binding ClassificationType}" SelectedItem="{Binding Classification}">
+            <ComboBox.Resources>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="FontSize" Value="18"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Left" />
+                </Style>
+            </ComboBox.Resources>
+        </ComboBox>
+
+        <!--Date-->
+        <TextBlock Grid.Row="8" Grid.Column="0" Text="Date:" Style="{StaticResource sideAlignedTextBlock}" />
+        <TextBox Grid.Row="8" Grid.Column="1" x:Name="dateTexBox" Style="{StaticResource simpleTextBox}" IsEnabled="False" Foreground="Black" Text="{Binding Date, Mode=TwoWay}"  />
+
+        <!--Shift/Operator/Backend Lead-->
+        <TextBlock Grid.Row="9" Grid.Column="0" Text="Shift/Initials:"  Style="{StaticResource sideAlignedTextBlock}" Width="Auto" Height="Auto" />
+        <TextBox Grid.Row="9" Grid.Column="1" x:Name="shiftOperatorLeadTextBox"  Style="{StaticResource simpleTextBox}" Text="{Binding ShiftInitials, Mode=TwoWay}"  />
+
+        <!--Comments-->
+        <TextBlock Grid.Row="10" Grid.Column="0" Text="Comments:" VerticalAlignment="Top" FontSize="18" />
+        <TextBox Grid.Row="11" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="commentsTextBox" TextWrapping="Wrap" Background="#FFFF99" Text="{Binding Comments, Mode=TwoWay}"  />
+
+        <!--Submit Button-->
+        <Button Command="{ Binding DataToPdfCommand }" CommandParameter="{Binding Data}" Grid.Row="13" Grid.Column="1" Content="Print" x:Name="submitButton"  FontSize="21" Margin="261,10,0,0"   />
+    </Grid>
+</Window>
