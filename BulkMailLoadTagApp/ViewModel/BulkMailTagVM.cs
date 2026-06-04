@@ -181,7 +181,8 @@ namespace BulkMailLoadTagApp.ViewModel
 
 		internal void DataToPdf()
 		{
-			MessageBox.Show("Weeeeee!");
+			PdfProcess process = new PdfProcess(data);
+
 		}
 	}
 

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "295dSl8Qf+E=",
+  "dgSpecHash": "gPl/1WwWzVs=",
   "success": true,
   "projectFilePath": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\hckri\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\hckri\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.3\\microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512",
+    "C:\\Users\\hckri\\.nuget\\packages\\pdfsharp\\6.2.4\\pdfsharp.6.2.4.nupkg.sha512",
+    "C:\\Users\\hckri\\.nuget\\packages\\pdfsharp-migradoc\\6.2.4\\pdfsharp-migradoc.6.2.4.nupkg.sha512"
+  ],
   "logs": []
 }
