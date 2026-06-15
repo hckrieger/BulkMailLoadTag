@@ -7,6 +7,8 @@ using MigraDoc.Rendering;
 using PdfSharp.Fonts;
 using PdfSharp.Pdf;
 using PdfSharp.Quality;
+using System.Diagnostics;
+using System.IO;
 
 namespace BulkMailLoadTagApp.ViewModel
 {
@@ -99,6 +101,24 @@ namespace BulkMailLoadTagApp.ViewModel
 
 
 			//var paragraph = section.AddParagraph($"{data.JobNumber} \n {data.DispatchNumber} \n {data.CustomerNameTitle}");
+			var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+			var outputPath = PdfFileUtility.GetTempPdfFullFileName("bulkLoadTag");
+			var fullPath = Path.Combine(baseDirectory, outputPath);
+
+			var tempPath = Path.Combine(baseDirectory, IOUtility.GetTempPath() ?? "");
+
+			//if (Directory.Exists(tempPath))
+			//{
+			//	Directory.Delete(tempPath, true);
+			//}
+
+			var fileCount = Directory.GetFiles(tempPath).Length;
+
+			if (fileCount > 12)
+			{
+				File
+			}
+		
 
 
 			var pdfRenderer = new PdfDocumentRenderer
@@ -111,18 +131,23 @@ namespace BulkMailLoadTagApp.ViewModel
 					{
 						FitWindow = true
 					}
-				}
+				},
+				WorkingDirectory = fullPath,
 			};
 
-			pdfRenderer.RenderDocument();
 
-			var filename = PdfFileUtility.GetTempPdfFullFileName("bulkLoadTag");
-			pdfRenderer.PdfDocument.Save(filename);
 
-			PdfFileUtility.ShowDocument(filename);
+				pdfRenderer.RenderDocument();
+
+
+
+			pdfRenderer.PdfDocument.Save(fullPath);
+
+			PdfFileUtility.ShowDocument(fullPath);
 
 
 		}
 	}
 	
+
 }

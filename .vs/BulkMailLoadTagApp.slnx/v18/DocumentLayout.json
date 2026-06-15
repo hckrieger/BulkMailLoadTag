@@ -3,20 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|c:\\users\\hckri\\source\\repos\\desktop\\wpf\\bulkmailloadtagapp\\bulkmailloadtagapp\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|solutionrelative:bulkmailloadtagapp\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|c:\\users\\hckri\\source\\repos\\desktop\\wpf\\bulkmailloadtagapp\\bulkmailloadtagapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|solutionrelative:bulkmailloadtagapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hckri\\source\\repos\\Game\\MonoGame\\Libraries\\Reusable\\Reusable\\BitmapFont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|c:\\users\\hckri\\source\\repos\\desktop\\wpf\\bulkmailloadtagapp\\bulkmailloadtagapp\\viewmodel\\pdfprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|solutionrelative:bulkmailloadtagapp\\viewmodel\\pdfprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|c:\\users\\hckri\\source\\repos\\desktop\\wpf\\bulkmailloadtagapp\\bulkmailloadtagapp\\model\\bulkmailtagdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|solutionrelative:bulkmailloadtagapp\\model\\bulkmailtagdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|c:\\users\\hckri\\source\\repos\\desktop\\wpf\\bulkmailloadtagapp\\bulkmailloadtagapp\\viewmodel\\commands\\datatopdfcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,6 +16,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|c:\\users\\hckri\\source\\repos\\desktop\\wpf\\bulkmailloadtagapp\\bulkmailloadtagapp\\viewmodel\\bulkmailtagvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|solutionrelative:bulkmailloadtagapp\\viewmodel\\bulkmailtagvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|c:\\users\\hckri\\source\\repos\\desktop\\wpf\\bulkmailloadtagapp\\bulkmailloadtagapp\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|solutionrelative:bulkmailloadtagapp\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|c:\\users\\hckri\\source\\repos\\desktop\\wpf\\bulkmailloadtagapp\\bulkmailloadtagapp\\model\\bulkmailtagdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|solutionrelative:bulkmailloadtagapp\\model\\bulkmailtagdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|c:\\users\\hckri\\source\\repos\\desktop\\wpf\\bulkmailloadtagapp\\bulkmailloadtagapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|solutionrelative:bulkmailloadtagapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2964C015-30DE-F34B-6CF6-0AA09D35A2FD}|BulkMailLoadTagApp\\BulkMailLoadTagApp.csproj|c:\\users\\hckri\\source\\repos\\desktop\\wpf\\bulkmailloadtagapp\\bulkmailloadtagapp\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +49,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\App.xaml",
               "RelativeDocumentMoniker": "BulkMailLoadTagApp\\App.xaml",
@@ -58,76 +61,85 @@
               "RelativeToolTip": "BulkMailLoadTagApp\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-05-31T15:36:49.052Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BitmapFont.cs",
+              "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\Game\\MonoGame\\Libraries\\Reusable\\Reusable\\BitmapFont.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Game\\MonoGame\\Libraries\\Reusable\\Reusable\\BitmapFont.cs",
+              "ToolTip": "C:\\Users\\hckri\\source\\repos\\Game\\MonoGame\\Libraries\\Reusable\\Reusable\\BitmapFont.cs",
+              "RelativeToolTip": "..\\..\\..\\Game\\MonoGame\\Libraries\\Reusable\\Reusable\\BitmapFont.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T02:00:24.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PdfProcess.cs",
               "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\ViewModel\\PdfProcess.cs",
               "RelativeDocumentMoniker": "BulkMailLoadTagApp\\ViewModel\\PdfProcess.cs",
               "ToolTip": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\ViewModel\\PdfProcess.cs",
               "RelativeToolTip": "BulkMailLoadTagApp\\ViewModel\\PdfProcess.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwDIAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAHYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-04T21:37:28.76Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\View\\MainWindow.xaml",
               "RelativeDocumentMoniker": "BulkMailLoadTagApp\\View\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\View\\MainWindow.xaml",
               "RelativeToolTip": "BulkMailLoadTagApp\\View\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-01T20:54:13.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T20:54:13.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "BulkMailTagVM.cs",
               "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\ViewModel\\BulkMailTagVM.cs",
               "RelativeDocumentMoniker": "BulkMailLoadTagApp\\ViewModel\\BulkMailTagVM.cs",
               "ToolTip": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\ViewModel\\BulkMailTagVM.cs",
               "RelativeToolTip": "BulkMailLoadTagApp\\ViewModel\\BulkMailTagVM.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAkwLcAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAMwLgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T15:37:45.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-31T15:37:45.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "DataToPdfCommand.cs",
               "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\ViewModel\\Commands\\DataToPdfCommand.cs",
               "RelativeDocumentMoniker": "BulkMailLoadTagApp\\ViewModel\\Commands\\DataToPdfCommand.cs",
               "ToolTip": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\ViewModel\\Commands\\DataToPdfCommand.cs",
               "RelativeToolTip": "BulkMailLoadTagApp\\ViewModel\\Commands\\DataToPdfCommand.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEcAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAA3wEcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T19:32:10.096Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "BulkMailTagData.cs",
               "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\Model\\BulkMailTagData.cs",
               "RelativeDocumentMoniker": "BulkMailLoadTagApp\\Model\\BulkMailTagData.cs",
               "ToolTip": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\Model\\BulkMailTagData.cs",
               "RelativeToolTip": "BulkMailLoadTagApp\\Model\\BulkMailTagData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T15:41:20.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-31T15:41:20.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\View\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "BulkMailLoadTagApp\\View\\MainWindow.xaml.cs",
@@ -139,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "BulkMailTagData.json",
               "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\bin\\Debug\\net10.0-windows\\BulkMailTagData.json",
               "RelativeDocumentMoniker": "BulkMailLoadTagApp\\bin\\Debug\\net10.0-windows\\BulkMailTagData.json",
@@ -151,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\Desktop\\WPF\\BulkMailLoadTagApp\\BulkMailLoadTagApp\\App.xaml.cs",
               "RelativeDocumentMoniker": "BulkMailLoadTagApp\\App.xaml.cs",
