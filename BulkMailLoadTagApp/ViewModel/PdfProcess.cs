@@ -116,7 +116,7 @@ namespace BulkMailLoadTagApp.ViewModel
 
 			if (fileCount > 12)
 			{
-				File
+				
 			}
 		
 
