@@ -19,22 +19,26 @@ namespace BulkMailLoadTagApp.ViewModel
 		private void CreateRow(Table table, string fieldName, string valueName)
 		{
 			var row = table.AddRow();
+			row.Height = Unit.FromCentimeter(2);
 
 			var field = row.Cells[0];
 
 			var space = 18;
 			var size = 16;
-		
 
+			Paragraph p = field.AddParagraph($"{fieldName}:");
+			p
 			var fieldText = field.AddParagraph($"{fieldName}:");
-			fieldText.Format.SpaceBefore = space;
-			fieldText.Format.SpaceAfter = space;
+			
+			
 			fieldText.Format.Font.Size = size;
 
 			var value = row.Cells[1];
 			var valueText = value.AddParagraph(valueName ?? string.Empty);
-			valueText.Format.SpaceBefore = space;
-			valueText.Format.SpaceAfter = space;
+
+
+			valueText.Format.SpaceBefore = Unit.FromCentimeter(1);
+			//valueText.Format.SpaceAfter = space;
 			valueText.Format.Font.Size = size;
 		}
 
@@ -45,35 +49,69 @@ namespace BulkMailLoadTagApp.ViewModel
 			GlobalFontSettings.UseWindowsFontsUnderWindows = true;
 
 
+			
+
+
 
 			var document = new Document();
-		
 
+
+			//Page Size
+			var pageWidth = document.DefaultPageSetup.PageWidth;
+			var pageHeight = document.DefaultPageSetup.PageHeight;
+
+			//Margins
+			var topMargin = document.DefaultPageSetup.TopMargin;
+			var bottomMargin = document.DefaultPageSetup.BottomMargin;
+
+			var leftMargin = document.DefaultPageSetup.LeftMargin;
+			var rightMargin = document.DefaultPageSetup.RightMargin;
+
+			//Content size
+			var contentX = leftMargin;
+			var contentY = topMargin;
+			Unit contentWidth = pageWidth - (leftMargin + rightMargin);
+			var contentHeight = pageHeight - (bottomMargin + topMargin);
+
+
+			//Initialize main section to add to document
+			//Initialize table to add to main Section 
 			var mainSection = document.AddSection();
-			mainSection.PageSetup.TopMargin = Unit.FromPoint(150);
-			//mainSection.PageSetup.BottomMargin = Unit.FromPoint(100);
+			
+
 
 			var table = mainSection.AddTable();
+
+
 			table.Borders.Visible = true;
 			
-			
+
+			//left column for description of fields
 			var fieldColumn = table.AddColumn();
 			fieldColumn.Format.Alignment = ParagraphAlignment.Right;
-			int totalWidth = 466;
-			fieldColumn.Width = totalWidth * .45f;
+			fieldColumn.Width = contentWidth * .45f;
+
+
+			//Right column for values
 			var valueColumn = table.AddColumn();
 			valueColumn.Format.Alignment = ParagraphAlignment.Center;
-			valueColumn.Width = totalWidth * .55f;
+			valueColumn.Width = contentWidth - fieldColumn.Width;
 
+
+
+
+			//Format header
 			var headerRow = table.AddRow();
+			headerRow.Height = 2;
 			var headerArea = headerRow.Cells[0];
-			headerArea.Format.SpaceAfter = 12;
 			var headerText = headerArea.AddParagraph($"Bulk Mail Load Tag");
 			headerText.Format.Alignment = ParagraphAlignment.Center;
 			headerText.Format.Font.Bold = true;
 			headerText.Format.Font.Size = 36;
 			headerArea.MergeRight = 1;
-	
+
+			
+
 
 			//Dispatch row
 			CreateRow(table, "Dispatch Number(s)", data.DispatchNumber);
@@ -93,12 +131,26 @@ namespace BulkMailLoadTagApp.ViewModel
 
 			CreateRow(table, "Shift/Initials", data.ShiftInitials);
 
+
+
 			var commentRow = table.AddRow();
 			var commentArea = commentRow.Cells[0];
 			commentArea.AddParagraph("Comments:");
 			commentArea.AddParagraph($"{data.Comments}");
+			commentArea.Format.Alignment = ParagraphAlignment.Left;
 			commentArea.MergeRight = 1;
 
+			Unit tableHeight = 0;
+			foreach (Row? row in table.Rows)
+			{
+				tableHeight += row.Height;
+			}
+
+			table.Rows.Alignment = RowAlignment.Center;
+
+			Debug.WriteLine($"{pageHeight - tableHeight}");
+
+			mainSection.PageSetup.TopMargin = ((pageHeight - topMargin) - tableHeight) / 2;
 
 			//var paragraph = section.AddParagraph($"{data.JobNumber} \n {data.DispatchNumber} \n {data.CustomerNameTitle}");
 			var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
