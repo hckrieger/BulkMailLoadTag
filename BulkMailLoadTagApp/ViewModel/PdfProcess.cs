@@ -19,25 +19,43 @@ namespace BulkMailLoadTagApp.ViewModel
 		private void CreateRow(Table table, string fieldName, string valueName)
 		{
 			var row = table.AddRow();
+			//row.TopPadding = Unit.FromCentimeter(.6);
 			row.Height = Unit.FromCentimeter(2);
 
 			var field = row.Cells[0];
 
-			var space = 18;
 			var size = 16;
 
-			Paragraph p = field.AddParagraph($"{fieldName}:");
-			p
 			var fieldText = field.AddParagraph($"{fieldName}:");
+			fieldText.Format.SpaceBefore = Unit.FromCentimeter(.7f);
 			
 			
 			fieldText.Format.Font.Size = size;
 
 			var value = row.Cells[1];
-			var valueText = value.AddParagraph(valueName ?? string.Empty);
+			
+
+			var innerTable = value.Elements.AddTable();
+
+			innerTable.AddColumn(Unit.FromInch(3.1));
 
 
-			valueText.Format.SpaceBefore = Unit.FromCentimeter(1);
+			var innerRow = innerTable.AddRow();
+			innerRow.Borders.Width = 1;
+			innerRow.Shading.Color = new Color(255, 255, 153);
+			innerRow.Height = Unit.FromCentimeter(.8);
+			innerRow.VerticalAlignment = VerticalAlignment.Center;
+
+			var valueCell = innerRow.Cells[0];
+			var valueText = valueCell.AddParagraph(valueName);
+			valueCell.VerticalAlignment = VerticalAlignment.Center;
+			valueCell.Format.Alignment = ParagraphAlignment.Center;
+			
+
+			//var valueText = value.AddParagraph(valueName ?? string.Empty);
+
+
+		//	valueText.Format.SpaceBefore = Unit.FromCentimeter(.7f);
 			//valueText.Format.SpaceAfter = space;
 			valueText.Format.Font.Size = size;
 		}
@@ -134,11 +152,16 @@ namespace BulkMailLoadTagApp.ViewModel
 
 
 			var commentRow = table.AddRow();
+			commentRow.Height = Unit.FromCentimeter(3);
 			var commentArea = commentRow.Cells[0];
-			commentArea.AddParagraph("Comments:");
+			var commentField = commentArea.AddParagraph("Comments:");
+			commentField.Format.Font.Size = 16;
+
 			commentArea.AddParagraph($"{data.Comments}");
+			
 			commentArea.Format.Alignment = ParagraphAlignment.Left;
 			commentArea.MergeRight = 1;
+		
 
 			Unit tableHeight = 0;
 			foreach (Row? row in table.Rows)
@@ -166,11 +189,6 @@ namespace BulkMailLoadTagApp.ViewModel
 
 			var fileCount = Directory.GetFiles(tempPath).Length;
 
-			if (fileCount > 12)
-			{
-				
-			}
-		
 
 
 			var pdfRenderer = new PdfDocumentRenderer
